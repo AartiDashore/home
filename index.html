@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta version="v.1.0.0">
+<link rel="stylesheet" href="style.css"/>
+<script src="script.js"></script>
+  <title>Aarti Dashore</title>
+</head>
+<body>
+  <h1>Hello!</h1>
+  <h2>I am Aarti Dashore</h2>
+  <p>Software Developer | Front End Developer | Data Science</p>
+  <button><a href="https://www.linkedin.com/in/aartidashore">LinkedIn</a></button>
+  <button><a href="https://www.github.com/AartiDashore">Github</a></button>
+  
+  <button id="aboutbutton" onclick="aboutButton()">About</button>
+  <button class="skillsTabButton" id="skillsTab" onclick="skillsTabButton()">Skills</button>
+  
+  <!--About Box-->
+  <div class="aboutButtonBox" id="aboutbox">
+    
+    <button class="close-all" id="closeabout" onclick="closeTabContainer('closeabout')">X</button>
+    
+    <h3>ABOUT ME</h3><hr>
+    <p>I am passionate about creating things. I began my codiing journey from early age of my school life and still continue to do it so.<br><br>
+      My hobbies are sketching, painting and video editing.<br><br>
+      Follow me on LinkedIn and drop me a dm to connect!
+    </p>
+  </div>
+  <!-- End About -->
+  
+  <!-- Skills Tab-->
+  <div class="skillsSection" id="skillsSection"> 
+    
+    <div class="skillsTab" id="skillsTabId">
+      
+      <button class="close-all" id="closeskills" onclick="closeTabContainer('closeskills')">X</button> 
+      
+      <button class="tab" id="languagebutton" onclick="openSkill('languages')">Languages</button>
+      <button class="tab" id="websitesbutton" onclick="openSkill('websites')">Websites</button>
+      <button class="tab" id="platformsbutton" onclick="openSkill('platforms')">Platforms</button>
+      <button class="tab" id="mobileappsbutton" onclick="openSkill('mobileApps')">Mobile Apps</button>
+      <button class="tab" id="advancedbutton" onclick="openSkill('advanced')">Advanced</button>
+    </div>
+  
+    <div class="tabcontentSection">
+    <div class="skillsTabContent" id="languages">
+      <h3>Programming Languages</h3>
+      <hr>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C/C++</li>
+        <li>Linux</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+    <div class="skillsTabContent" id="websites">
+      <h3>Front End websites</h3>
+      <hr>
+      <ul>
+        <li>MEAN stack</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+    </div>
+    <div class="skillsTabContent" id="platforms">
+      <h3>Platforms</h3>
+      <hr>
+      <ul>
+        <li>Anaconda Jupyter Notebook</li>
+        <li>IntelliJIdea</li>
+        <li>Eclipse</li>
+        <li>Microsoft Office</li>
+        <li>VS Studio</li>
+        <li>Unity</li>
+      </ul>
+    </div>
+    <div class="skillsTabContent" id="mobileApps">
+      <h3>Mobile Application Development</h3>
+      <hr>
+      <ul>
+        <li>Android</li>
+        <li>Kotlin</li>
+      </ul>
+    </div>
+    <div class="skillsTabContent" id="advanced">
+      <h3>Artifical Intelligence</h3>
+      <hr>
+      <ul>
+        <li>Machine Learning using Python</li>
+        <li>Data Science concepts</li>
+      </ul>
+    </div>  
+  </div>
+  </div>
+  <!-- End skills Tab -->
+  
+
+  
+  
+</body>
+</html>
